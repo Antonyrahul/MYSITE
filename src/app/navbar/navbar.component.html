@@ -1,0 +1,46 @@
+<div class="navbar navbar-dark navbarbg">
+  <a href="#" class="navbar-brand">RAHUL ANTONY'S PORTFOLIO</a>
+  <button type="button" class="navbar-toggler" (click)="menu.classList.add('show-menu')">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div class="menu" #menu>
+    <div class="close">
+
+
+      <img class="closebtn" src="../../assets/close.png" (click)="menu.classList.remove('show-menu')">
+    </div>
+    <div class="row menuitems" (click)="menu.classList.remove('show-menu')">
+
+      <div class="col-lg-4 col-sm-12 col-md- list">
+        <h1> <a href="#">Home</a></h1>
+      </div>
+      <div class="col-lg-4 col-sm-12 col-md-12 list">
+        <h1> <a routerLink="contact">Contact Me</a></h1>
+      </div>
+      <div class="col-lg-4 col-sm-12 col-md-12 list">
+        <h1> <a routerLink="projects">Projects</a> </h1>
+      </div>
+
+      <div class="col-lg-4 col-sm-12 col-md- list">
+        <h1> <a routerLink="intro">Introduction</a></h1>
+      </div>
+      <div class="col-lg-4 col-sm-12 col-md-12 list">
+        <h1> <a routerLink="education">Education</a> </h1>
+      </div>
+      <div class="col-lg-4 col-sm-12 col-md- list">
+        <h1> <a routerLink="work">Work</a></h1>
+      </div>
+      <div class="col-lg-4 col-sm-12 col-md-12 list">
+        <h1> <a routerLink="acheivements">Acheivements</a></h1>
+      </div>
+
+
+
+
+    </div>
+
+  </div>
+
+</div>

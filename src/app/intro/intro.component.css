@@ -1,0 +1,42 @@
+body{
+    
+    background-color: black;
+       background-size: cover;
+       background-repeat: no-repeat;
+       
+        min-height: 92.5vh;
+    margin:0;
+       display:flex;
+       padding:0;
+   top: 0;
+   left: 0;
+   overflow: visible;
+   }
+  /* Basic styles */
+  h1 {
+     
+      float: left;
+      color: #d7b94c;
+      font-family: 'Inconsolata', Consolas, monospace;
+      font-size: 2em;
+  }
+
+
+  .wrapper{
+      text-align: center;
+    animation: typing 1s ease-in-out;
+  }
+  .text-centre{
+      text-align: center;
+  }
+
+
+
+  @keyframes typing{
+from{
+   transform: scale(0);
+}
+to{
+    transform: scale(1);
+}
+  }

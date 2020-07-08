@@ -1,0 +1,73 @@
+body{
+    
+    /* background-image: url(../../assets/galaxy1.jpg);
+    background-size: cover; */
+
+   
+
+    background-image: url(../../assets/bgimg2.jpg);
+    
+    
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    
+    height: 92.5vh;
+
+    margin:0;
+    
+    display:flex;
+    
+    padding:0;
+
+    top: 0;
+    left: 0;
+}
+
+.home{
+    text-align: center;
+    width: 100%;
+}
+ img{
+   
+    height: 150px;
+    width:  150px;
+    border-radius: 50%;
+    
+    margin-left: auto;
+    margin-right:auto;
+    margin-top: 10%;
+  animation: show-img 1s ease-in-out;
+  
+
+}
+ .hi
+{
+    color: white;
+    font-family: comic-sans;
+    text-align: center;
+    animation: show-hi 1s ease-in-out;
+} 
+
+@keyframes show-img{
+   from{
+       transform: rotate(360deg);
+   }
+   to{
+       transform: rotate(0deg);
+   }
+}
+
+
+@keyframes show-hi{
+from{
+    transform: scale(0)
+  
+}
+to{
+    transform: scale(1)
+    
+}
+}
+

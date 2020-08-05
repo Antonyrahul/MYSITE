@@ -16,8 +16,9 @@ body{
   h1 {
      
       float: left;
-      color: #d7b94c;
-      font-family: 'Inconsolata', Consolas, monospace;
+      color: rgb(255, 150, 29);
+      font-family: ‘Merriweather’, Georgia, serif; 
+      /* font-family: 'Inconsolata', Consolas, monospace; */
       font-size: 2em;
   }
 

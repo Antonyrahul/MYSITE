@@ -1,4 +1,4 @@
-.social-btn .btn {
+ .social-btn .btn {
     border: none;
     margin: 10px 3px 0;
     opacity: 1;
@@ -68,10 +68,15 @@
     cursor: pointer;
 }
 h3{
-    
-    
     text-align: center;
-    color:khaki
+    color: rgb(255, 150, 29);
+    font-family: ‘Merriweather’, Georgia, serif; 
+}
+
+h4{
+    text-align: center;
+    color:rgba(238, 238, 238, 0.7);
+    font-family: sans-serif;
 }
 .or-seperator {
     margin-top: 20px;
@@ -85,6 +90,29 @@ h3{
     top: -11px;
     z-index: 1;
 }   
+.blackboard
+{
+  
+
+  margin-top: auto;
+    display: grid;
+    place-items: center;
+    place-self: center;
+}
+
+.contactform{
+    animation: show-menu  1.1s ease-in-out;
+    /* box-shadow: 0 0 40px -10px; */
+    box-shadow: 4px 4px 20px 0 rgba(255, 255, 255, 0.5);
+    height: 400px;
+    width: 400px;
+    border-radius: 10px;
+    border-color: white;
+    
+    display: grid;
+    place-items: center;
+    place-self: center;
+}
 #snackbar {
     visibility: hidden;
     min-width: 250px;
@@ -100,6 +128,18 @@ h3{
     bottom: 30px;
     font-size: 17px;
   }
+
+
+  @keyframes show-menu{
+    from{
+        transform:translateX(-80%);
+        opacity:0;
+    }
+    to{
+        transform:translateX(0);
+        opacity:1;
+    }
+}
   
   #snackbar.show {
     visibility: visible;
@@ -135,6 +175,8 @@ h3{
       width: 100%;
     
 }
+
+
 /* body{
     
     background-color: black;
@@ -214,7 +256,7 @@ textarea {
 }
 
 textarea {
-    height: 120px;
+    height: 80px;
     font-size: 1.4em;
     line-height: 1em;
     resize: none;

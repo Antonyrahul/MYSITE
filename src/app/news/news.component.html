@@ -7,6 +7,12 @@
 <div class="col-lg-12">
   <h3 class = "title">Latest Tech News</h3>
   <br>
+  <div *ngIf ="isloaded ==false" class="d-flex justify-content-center">
+  <div class="spinner-border text-warning text-center" style="width: 7rem; height: 7rem;" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+</div>
+
    
     <div  class="row">
 

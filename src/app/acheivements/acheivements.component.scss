@@ -179,7 +179,8 @@
     $r: 50vh;
     $gap: .75em;
     $primary-color: black;
-    $heading-color :rgb(240,230,140);
+    $heading-color :rgb(255, 150, 29);
+   
     
     * { margin: 0 }
     
@@ -190,6 +191,8 @@
              h4{
                  color: $heading-color;
                  text-align: center;
+                 
+                 font-family: ‘Merriweather’, Georgia, serif; 
              }
     
     p {

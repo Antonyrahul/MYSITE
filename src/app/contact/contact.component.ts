@@ -10,6 +10,7 @@ import {ProductService} from '../product.service'
 export class ContactComponent implements OnInit {
 messageform;
 message;
+showspinner = false;
   constructor(private productservice:ProductService) { 
     this.messageform = new FormGroup({
       email:new FormControl('',[Validators.required,Validators.email]),
@@ -27,10 +28,12 @@ message;
   {
     if(this.messageform.valid)
     {
+      this.showspinner = true;
     console.log(this.messageform.value)
     this.productservice.sendmessage(this.messageform.value).subscribe((data)=>{
       console.log(data)
       console.log(data.message)
+      this.showspinner = false;
       if(data.message==="sent")
       {
         this.message ="MESSAGE SENT SUCCESSFULLY"

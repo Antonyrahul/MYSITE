@@ -4,7 +4,8 @@
     margin-top: 1%;
     width: 100%;
   text-align: center;
-  color: khaki;
+  color: rgb(255, 150, 29);
+    font-family: ‘Merriweather’, Georgia, serif; 
 
 }
 
@@ -13,19 +14,32 @@
   .card-text{
     height:80px;  
   }
+  a{
+    text-decoration: none;
+  }
   
 
 
   div.card
   {
-    background: linear-gradient(to right, #BFF098 0%, #6FD6FF 100%);
+    background: linear-gradient(to right, black 0%, #252525 100%);
     border-radius: 10px;
-    box-shadow: 10px 10px;
+    border-color:black;
+    border-width:thin
+   
     
+  }
+  h5{
+    color:white;
+    font-family:  Roboto;
+  }
+  p{
+    color: rgb(212, 209, 209);
+    font-family:sans-serif;
   }
   body {
 
-    background-color: black;
+    background-color: #252525;
 
 
 
@@ -68,4 +82,60 @@ padding:0;
     animation:bounce 1s ease-in-out
  }
   
+
+
+
+
+
+
+ .flip-card {
+  background-color: transparent;
+  margin: auto;
+  width: 400px;
+  height: 400px;
+  margin-top: 5px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  -webkit-animation: slideIn 2s forwards;
+  -moz-animation: slideIn 2s forwards;
+  animation: slideIn 2s forwards;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background: linear-gradient(to right, #BFF098 0%, #6FD6FF 100%);
+  border-radius: 10px;
+  box-shadow: 10px 10px;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
 

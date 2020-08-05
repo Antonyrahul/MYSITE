@@ -1,7 +1,8 @@
 
 h3.title{
     text-align: center;
-    color:khaki;
+    color: rgb(255, 150, 29);
+    font-family: ‘Merriweather’, Georgia, serif; 
 }
 .card-horizontal {
     display: flex;
@@ -9,6 +10,7 @@ h3.title{
   
 
 }
+
 
 .card-title i:hover{
     transform: scale(1.25) rotate(100deg); 

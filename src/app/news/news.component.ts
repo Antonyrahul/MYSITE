@@ -8,10 +8,12 @@ import {ProductService} from '../product.service'
 export class NewsComponent implements OnInit {
 
   articles
+  isloaded = false;
   constructor(private productservice :ProductService) {
     this.productservice.getnews().subscribe((data)=>{
       console.log(data.data.articles)
       this.articles = data.data.articles
+      this.isloaded = true;
       //this.prod = data.data
   })
    }

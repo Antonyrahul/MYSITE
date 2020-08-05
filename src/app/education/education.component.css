@@ -12,6 +12,15 @@ top: 0;
 left: 0;
 overflow: visible;
 }
+h3{
+    margin-top: 1%;
+    width: 100%;
+  text-align: center;
+  color: rgb(255, 150, 29);
+    font-family: ‘Merriweather’, Georgia, serif; 
+
+}
+
   
 *{
         margin:0;
